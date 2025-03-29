@@ -1,10 +1,185 @@
 *{
-    font-family: sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #F3D62E;
 }
 
 body{
     width: 100%;
     height: 100%;
-    background-color: blue;
+    background-color: #222E50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
 
+header{
+    height: 18vh;
+    width: 100vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: "Kodchasan";
+    font-weight: 400;
+    font-style: normal;
+    position: fixed;
+    top: 0.1px;
+    border-radius: 1em;
+}
+
+.div-headerprincipal{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div-img{
+    width: 33%;
+    
+}
+
+.logo{
+    width: 3em;
+}
+
+.div-header1{
+    font-size: 1.5em;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+.div-header1 > a:nth-child(2){
+   padding-left: 2em;
+}
+
+.div-header2{
+    font-size: 1.3em;
+    width: 33%;
+    display: flex;
+    justify-content: right;
+}
+.div-header2 > a:nth-child(2){
+   margin-left: 2em;
+}
+
+main{
+    width:  100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.fonte-tech{
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4em;
+}
+
+.div-texto{
+    display: flex;
+    align-items: center;
+}
+
+.texto{
+    font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 1.7em;
+}
+
+.fonte-tech{
+    margin: 0 0.1em 0 0.2em;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.fonte-menor{
+    font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 1.4em;
+}
+
+.slog{
+    width: 82%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.div-esq{
+    width: 50%;
+    
+}
+
+.div-dir{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon1, .icon2, .icon3, .icon4, .icon5 {
+    position: absolute;
+    animation: flutuar 3s ease-in-out infinite;
+    
+}
+.icon1 {
+    right: 13em;
+    top: 10em;
+    animation-duration: 3s;
+    box-shadow: 1px yellow;
+}
+
+.icon2 {
+    right: 30em;
+    top: 14em;
+    animation-duration: 4s; 
+}
+
+.icon3 {
+    right: 5em;
+    top: 20em;
+    animation-duration: 5s;
+}
+
+.icon4 {
+    right: 18em;
+    top: 22em;
+    animation-duration: 6s; 
+}
+
+.icon5 {
+    right: 26em;
+    top: 23em;
+    animation-duration: 4.5s; 
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-20px); 
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
