@@ -26,9 +26,10 @@ header{
     font-family: "Kodchasan";
     font-weight: 400;
     font-style: normal;
-    position: fixed;
-    top: 0.1px;
+   position: fixed;
+   top: 0.1px;
     border-radius: 1em;
+    background-color: #222E50;
 }
 
 .div-headerprincipal{
@@ -69,7 +70,7 @@ header{
 
 main{
     width:  100vw;
-    height: 90vh;
+    height: 120vh;
     display: flex;
     justify-content: center;
     
@@ -139,7 +140,7 @@ main{
 .icon1, .icon2, .icon3, .icon4, .icon5 {
     position: absolute;
     animation: flutuar 3s ease-in-out infinite;
-    
+    z-index: -1;
 }
 .icon1 {
     right: 13em;
